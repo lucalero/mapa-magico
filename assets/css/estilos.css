@@ -3,8 +3,9 @@
     src: url(../font/MaterialIcons-Regular.ttf);
 }
 
+
 body {
-    background-color: #1D232A;
+    background-color: #553D67;
     font-family: 'Open Sans', 'icones', sans-serif;
     color: #FFFFFF;
 }
@@ -16,26 +17,24 @@ body {
     }
 }
 
+
 .cabecalho {
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #15191C;
+    background-color:#553D67;
     padding: 8px 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 }
 
 .cabecalho__menu i::before {
-    content: "\e904";
+    content: "\e235";
     font-size: 24px;
+    color: #41B3A3;
 }
 
-.cabecalho__botao i::before {
-    content: "\e8b6";
-    font-size: 30px;
-    color:#41B3A3 ;
-    margin-right: 5px;
-}
+
 
 .cabecalho__logo {
     width: 40px;
@@ -64,13 +63,7 @@ body {
         display: none;
     }
 
-    .cabecalho__buscar {
-        height: 30px;
-        width: 18rem;
-        justify-self: end;
-        border-radius: 10px;
-      
-    }
+   
 
     .cabecalho__buscar::-webkit-input-placeholder {
         text-align: center;
@@ -96,14 +89,24 @@ body {
     margin-top: 10px;
 }
 
+.cabecalho__botao i::before {
+    content: "\e8b6";
+    font-size: 30px;
+    color:#41B3A3 ;
+    margin-right: 5px;
 }
+
+}
+
+
+
 
 .menu-lateral {
     display: flex;
     flex-direction: column;
-    background-color: #15191C;
-    width: 75vw;
-    height: 100vh;
+    background-color: #422c52;
+    width: 55vw;
+    height: 92.4vh;
 
     position: absolute;
     left: -100vw;
@@ -116,9 +119,7 @@ body {
 }
 
 .menu-lateral__logo {
-    width: 118px;
-    align-self: center;
-    padding: 16px;
+    display: none;
 }
 
 .menu-lateral__link {
@@ -164,6 +165,23 @@ body {
     content: "\e0be";
 }
 
+.mapa__cogumelo{
+    height: calc(100vh - 90px);
+    width: 100vw;
+
+}
+
+.rodape{
+    background-color: #553D67;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cabecalho__logo-mobile{
+    height: 100px;
+    margin-top: 10px;
+}
 
 @media screen and (min-width: 1440px) {
     .menu-lateral {
@@ -195,6 +213,7 @@ body {
         align-items: center;
         justify-content: center;
         display: flex;
+        margin-right: 10rem;
     }
 
 }
@@ -213,5 +232,43 @@ body {
 .titulo-secao {
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+
+
+.esconderbotao{
+    display: none;
+}
+
+
+
+@media screen and (min-width: 1440px) {
+.esconderbotao {
+    display:grid;
+   
+ 
+}
+
+.cabecalho__buscar {
+    height: 30px;
+    width: 18rem;
+    justify-self: end;
+    border-radius: 10px;
+    
+  
+}
+
+.menu-lateral__logo {
+    width: 208px;
+    align-self: center;
+    padding: 16px;
+    display: inline-block;
+}
+
+
+.cabecalho__logo-mobile{
+display: none;
+}
+
 }
 
