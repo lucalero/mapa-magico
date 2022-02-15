@@ -8,12 +8,15 @@ body {
     background-color: #553D67;
     font-family: 'Open Sans', 'icones', sans-serif;
     color: #FFFFFF;
+
+    
 }
 
 @media screen and (min-width: 1440px) {
     .body {
         display: grid;
         grid-template-columns: auto auto;
+
     }
 }
 
@@ -25,7 +28,7 @@ body {
     align-items: center;
     background-color:#553D67;
     padding: 8px 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    
 }
 
 .cabecalho__menu i::before {
@@ -50,7 +53,7 @@ body {
 
         display: flex;
         padding: 16px 30px;
-        height: 80px;
+        height: 40px;
         box-sizing: border-box;
        justify-content: flex-end;
     }
@@ -69,29 +72,16 @@ body {
         text-align: center;
      }
 
-    .cabecalho__perfil::before {
-        content: " ";
-        display: block;
-        width: 32px;
-        height: 32px;
-        background-image: url(../img/profile_2.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+  
 
-    .cabecalho__perfil::after {
-        content: "\e5c5";
-        color: #F64C72;
-        font-size: 1.5rem;
+    
+    .cabecalho__botao{
+    margin-top: 05px;
     }
-.cabecalho__botao{
-    margin-top: 10px;
-}
 
 .cabecalho__botao i::before {
     content: "\e8b6";
-    font-size: 30px;
+    font-size: 20px;
     color:#41B3A3 ;
     margin-right: 5px;
 }
@@ -124,6 +114,7 @@ body {
 
 .menu-lateral__link {
     height: 64px;
+    font-size: 14px;
     color: #41B3A3;
     padding-left: 64px;
     display: flex;
@@ -142,7 +133,7 @@ body {
     height: 24px;
     font-size: 24px;
     position: absolute;
-    left: 24px;
+    left: 14px;
 }
 
 .menu-lateral__link--inicio::before {
@@ -181,12 +172,13 @@ body {
 .cabecalho__logo-mobile{
     height: 100px;
     margin-top: 10px;
+    margin-right: 26px;
 }
 
 @media screen and (min-width: 1440px) {
     .menu-lateral {
         position: static;
-        width: 225px;
+        width: 105px;
         grid-column: 1;
         grid-row: 1 / span 3;
         background: #553D67;
@@ -197,19 +189,20 @@ body {
 
     
     .mapa__cogumelo{
-        height: calc(100vh - 129px);
-        width: calc(100vw - 225px);
+        height: calc(100vh - 69px);
+        width: calc(100vw - 167px);
+        margin-left: 60px;
 
     }
 
     .menu-lateral__logo {
-        width: 225px;
+        width: 200px;
         align-self: center;
-        padding: 10px;
+        padding: 90px;
     }
     .rodape{
         background-color: #553D67;
-        height: 47px;
+        height: 27px;
         align-items: center;
         justify-content: center;
         display: flex;
@@ -243,32 +236,52 @@ body {
 
 
 @media screen and (min-width: 1440px) {
-.esconderbotao {
-    display:grid;
-   
- 
-}
-
-.cabecalho__buscar {
-    height: 30px;
-    width: 18rem;
-    justify-self: end;
-    border-radius: 10px;
+    .esconderbotao {
+        display:grid;
     
-  
-}
+    
+    }
 
-.menu-lateral__logo {
-    width: 208px;
-    align-self: center;
-    padding: 16px;
-    display: inline-block;
-}
+    .cabecalho__buscar {
+        height: 20px;
+        width: 18rem;
+        justify-self: end;
+        border-radius: 05px;
+        
+    
 
 
-.cabecalho__logo-mobile{
-display: none;
-}
+    }
+
+    .menu-lateral__logo {
+        width: 150px;
+        align-items: center;
+        padding: 6px;
+        margin-left: 50px;
+        display: flex;
+    }
+
+
+    .cabecalho__logo-mobile{
+    display: none;
+    }
+
+
+        .menu-lateral__link {
+        height: 64px;
+        font-size: 14px;
+        padding-left: 64px;
+        line-height: normal;
+        width: 100px;
+        
+        }
+
+
+        .menu-lateral__link--ativo {
+            color: #F64C72;
+            padding-left: 56px;
+            border-left: 8px solid #F64C72;
+        }
 
 }
 
