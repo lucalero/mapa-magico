@@ -283,5 +283,13 @@ body {
             border-left: 8px solid #F64C72;
         }
 
+
+
+
+        footer{
+            width: 100vw;
+            display: flex;
+            justify-content: flex-start;
+        }
 }
 
